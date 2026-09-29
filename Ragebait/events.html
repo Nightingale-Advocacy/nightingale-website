@@ -40,14 +40,31 @@
       </p>
 
       <!-- ============================================================
-           UPCOMING EVENTS
-           Add future events here. Duplicate an .event-card block below.
+           TABS: switch between Upcoming / Ongoing / Past.
+           Only the .events-panel with class "active" is shown.
+           When adding an event, update the count in its tab button.
            Event types (set the badge class + label):
              type-fundraiser | type-conference | type-meetup
              type-campaign   | type-partner    | type-session
            ============================================================ -->
-      <h2 class="events-status">Upcoming</h2>
-      <div class="events-grid">
+      <div class="events-tabs" role="tablist">
+        <button class="events-tab active" data-tab="upcoming">
+          Upcoming <span class="count">(1)</span>
+        </button>
+        <button class="events-tab" data-tab="ongoing">
+          Ongoing <span class="count">(3)</span>
+        </button>
+        <button class="events-tab" data-tab="past">
+          Past <span class="count">(4)</span>
+        </button>
+      </div>
+
+      <!-- ============================================================
+           UPCOMING EVENTS
+           Add future events here. Duplicate an .event-card block below.
+           ============================================================ -->
+      <div class="events-panel active" id="panel-upcoming">
+        <div class="events-grid">
         <div class="event-card">
           <span class="event-badge type-session">Coming Soon</span>
           <h3 class="event-title">More events on the way</h3>
@@ -61,14 +78,15 @@
             meetups.
           </p>
         </div>
+        </div>
       </div>
 
       <!-- ============================================================
            ONGOING / CURRENT
            Active campaigns or events happening right now.
            ============================================================ -->
-      <h2 class="events-status">Ongoing / Current</h2>
-      <div class="events-grid">
+      <div class="events-panel" id="panel-ongoing">
+        <div class="events-grid">
         <div class="event-card event-card-embed">
           <span class="event-badge type-campaign">Public Campaign</span>
           <h3 class="event-title">Power in Prevention</h3>
@@ -175,14 +193,15 @@
             </div>
           </blockquote>
         </div>
+        </div>
       </div>
 
       <!-- ============================================================
            PAST EVENTS
            Archive of events that have already happened.
            ============================================================ -->
-      <h2 class="events-status">Past</h2>
-      <div class="events-grid">
+      <div class="events-panel" id="panel-past">
+        <div class="events-grid">
         <div class="event-card past event-card-embed">
           <span class="event-badge type-session">Announcement</span>
           <h3 class="event-title">FY27 Executive Board Announced</h3>
@@ -303,6 +322,7 @@
             </div>
           </blockquote>
         </div>
+        </div>
       </div>
     </section>
 
@@ -362,5 +382,38 @@
       <br />
     </footer>
     <script async src="//www.instagram.com/embed.js"></script>
+    <script>
+      // Tab switching for the events sections. Shows one panel at a time and
+      // asks Instagram to (re)render embeds when a panel becomes visible.
+      (function () {
+        var tabs = document.querySelectorAll(".events-tab");
+        var panels = document.querySelectorAll(".events-panel");
+
+        function processEmbeds() {
+          if (window.instgrm && window.instgrm.Embeds) {
+            window.instgrm.Embeds.process();
+          }
+        }
+
+        tabs.forEach(function (tab) {
+          tab.addEventListener("click", function () {
+            var target = tab.getAttribute("data-tab");
+            tabs.forEach(function (t) {
+              t.classList.remove("active");
+            });
+            panels.forEach(function (p) {
+              p.classList.remove("active");
+            });
+            tab.classList.add("active");
+            document
+              .getElementById("panel-" + target)
+              .classList.add("active");
+            processEmbeds();
+          });
+        });
+
+        window.addEventListener("load", processEmbeds);
+      })();
+    </script>
   </body>
 </html>
