@@ -698,3 +698,211 @@ footer a:hover {
 a:active {
   color: #35074f;
 }
+
+/* ============================================================
+   EVENTS PAGE
+   ============================================================ */
+
+.events h1 {
+    color: #bd7df8;
+    font-size: 3.5rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.events .events-intro {
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 2rem auto 1rem auto;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.events .events-follow {
+    margin-top: 2rem;
+}
+
+.events .events-status {
+    color: #bd7df8;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 4rem 0 0 0;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid #bd7df8;
+}
+
+.events-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.event-card {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 2rem;
+    width: calc(33.333% - 1.7rem);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card:hover {
+    transform: scale(1.025);
+    box-shadow: 0 0 25px #bd7df8;
+}
+
+.event-card.past {
+    opacity: 0.85;
+}
+
+/* Cards containing an Instagram embed get more width */
+.event-card-embed {
+    width: calc(50% - 1.25rem);
+}
+
+.event-card-embed .instagram-media {
+    margin-top: 1.5rem !important;
+}
+
+@media (max-width: 1200px) {
+    .event-card-embed {
+        width: 100%;
+    }
+}
+
+.event-badge {
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    padding: 0.4rem 1.2rem;
+    border-radius: 4rem;
+    color: white;
+    margin-bottom: 1.2rem;
+}
+
+/* Event type badge colors */
+.type-fundraiser { background-color: #35074f; }
+.type-conference { background-color: #7b2fb5; }
+.type-meetup { background-color: #bd7df8; color: #35074f; }
+.type-campaign { background-color: #9b4dca; }
+.type-partner { background-color: #5a1a7a; }
+.type-session { background-color: #a566d6; }
+
+.event-title {
+    color: #35074f;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.event-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #7b2fb5;
+    margin-bottom: 1.2rem;
+}
+
+.event-meta i {
+    margin-right: 0.4rem;
+}
+
+.event-desc {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    opacity: 0.85;
+    text-align: justify;
+}
+
+@media (max-width: 995px) {
+    .event-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 996px) {
+    .event-card {
+        width: calc(50% - 1.25rem);
+    }
+}
+
+/* ---- Events: tabs + capped embeds ---- */
+
+.events-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 3rem 0 1rem 0;
+}
+
+.events-tab {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #bd7df8;
+    border-radius: 4rem;
+    padding: 0.8rem 2.4rem;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.events-tab:hover {
+    background: rgba(189, 125, 248, 0.2);
+}
+
+.events-tab.active {
+    background: #bd7df8;
+    color: #35074f;
+    box-shadow: 0 0 18px rgba(189, 125, 248, 0.6);
+}
+
+.events-tab .count {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    margin-left: 0.4rem;
+}
+
+/* Only the active panel is shown */
+.events-panel {
+    display: none;
+}
+
+.events-panel.active {
+    display: block;
+}
+
+/* Capped-embed grid: cards sit in a neat centered grid */
+.events-panel .events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 360px));
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.events-panel .event-card {
+    width: auto;
+    min-height: 0;
+    padding: 1.6rem;
+    align-items: stretch;
+}
+
+/* Cap the Instagram embed to the card column, centered, no sprawl */
+.event-card .instagram-media {
+    margin: 1.4rem auto 0 auto !important;
+    max-width: 328px !important;
+    min-width: 0 !important;
+    width: 100% !important;
+}

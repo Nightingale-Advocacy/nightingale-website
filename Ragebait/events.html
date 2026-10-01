@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/nightingalelogo_35074f.png" />
+    <title>Nightingale Advocacy | Events</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">Nightingale Advocacy</a>
+      <nav>
+        <a href="index.html"> Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="blog.html">Blog</a>
+        <a href="chapters.html">Chapters</a>
+        <a href="events.html" class="active">Events</a>
+        <a href="mailto:nightingaleadvocacy@gmail.com">Contact</a>
+      </nav>
+    </header>
+
+    <section class="events">
+      <h1 class="events">Our Events</h1>
+      <p class="events-intro">
+        Follow along with our partner engagements, fundraisers, public
+        campaigns, conferences, sessions, and meetups. Track what's coming up,
+        what's happening now, and where we've been.
+        <br />
+        <a
+          href="https://www.instagram.com/nightingaleadvocacy/"
+          class="btn events-follow"
+          >Follow us on Instagram</a
+        >
+      </p>
+
+      <!-- ============================================================
+           TABS: switch between Upcoming / Ongoing / Past.
+           Only the .events-panel with class "active" is shown.
+           When adding an event, update the count in its tab button.
+           Event types (set the badge class + label):
+             type-fundraiser | type-conference | type-meetup
+             type-campaign   | type-partner    | type-session
+           ============================================================ -->
+      <div class="events-tabs" role="tablist">
+        <button class="events-tab active" data-tab="upcoming">
+          Upcoming <span class="count">(1)</span>
+        </button>
+        <button class="events-tab" data-tab="ongoing">
+          Ongoing <span class="count">(3)</span>
+        </button>
+        <button class="events-tab" data-tab="past">
+          Past <span class="count">(4)</span>
+        </button>
+      </div>
+
+      <!-- ============================================================
+           UPCOMING EVENTS
+           Add future events here. Duplicate an .event-card block below.
+           ============================================================ -->
+      <div class="events-panel active" id="panel-upcoming">
+        <div class="events-grid">
+        <div class="event-card">
+          <span class="event-badge type-session">Coming Soon</span>
+          <h3 class="event-title">More events on the way</h3>
+          <div class="event-meta">
+            <span><i class="fa-solid fa-calendar-days"></i> Stay tuned</span>
+            <span><i class="fa-solid fa-location-dot"></i> Nationwide / Virtual</span>
+          </div>
+          <p class="event-desc">
+            We're always planning what's next. Follow us on Instagram for
+            announcements about upcoming fundraisers, conferences, sessions, and
+            meetups.
+          </p>
+        </div>
+        </div>
+      </div>
+
+      <!-- ============================================================
+           ONGOING / CURRENT
+           Active campaigns or events happening right now.
+           ============================================================ -->
+      <div class="events-panel" id="panel-ongoing">
+        <div class="events-grid">
+        <div class="event-card event-card-embed">
+          <span class="event-badge type-campaign">Public Campaign</span>
+          <h3 class="event-title">Power in Prevention</h3>
+          <div class="event-meta">
+            <span><i class="fa-solid fa-calendar-days"></i> Ongoing</span>
+            <span><i class="fa-solid fa-location-dot"></i> Nationwide / Virtual</span>
+          </div>
+          <p class="event-desc">
+            Our petition demanding equitable vaccine access for all — because
+            everyone deserves protection, no matter where they live or what they
+            can afford. Sign today to help turn awareness into action.
+          </p>
+          <!-- Instagram embed -->
+          <blockquote
+            class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/p/DQDPLMNjPye/?utm_source=ig_embed&amp;utm_campaign=loading"
+            data-instgrm-version="14"
+            style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"
+          >
+            <div style="padding:16px;">
+              <a
+                href="https://www.instagram.com/p/DQDPLMNjPye/?utm_source=ig_embed&amp;utm_campaign=loading"
+                style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                target="_blank"
+                >View this post on Instagram</a
+              >
+            </div>
+          </blockquote>
+        </div>
+
+        <div class="event-card event-card-embed">
+          <span class="event-badge type-fundraiser">Fundraiser</span>
+          <h3 class="event-title">Nightingale x I AM ALS</h3>
+          <div class="event-meta">
+            <span><i class="fa-solid fa-calendar-days"></i> Ongoing</span>
+            <span><i class="fa-solid fa-location-dot"></i> Virtual</span>
+          </div>
+          <p class="event-desc">
+            Our fundraising initiative with I AM ALS to raise awareness and
+            support for the ALS community. Every contribution helps the fight
+            against ALS and the people and families affected by it — donate
+            today at iamals.donordrive.com/nightingale-26.
+          </p>
+          <!-- Instagram embed: initiative launch -->
+          <blockquote
+            class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/p/DdDAs_UDFr7/?utm_source=ig_embed&amp;utm_campaign=loading"
+            data-instgrm-version="14"
+            style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"
+          >
+            <div style="padding:16px;">
+              <a
+                href="https://www.instagram.com/p/DdDAs_UDFr7/?utm_source=ig_embed&amp;utm_campaign=loading"
+                style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                target="_blank"
+                >View this post on Instagram</a
+              >
+            </div>
+          </blockquote>
+          <!-- Instagram embed: donation reminder -->
+          <blockquote
+            class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/p/DdnUjqoDXxs/?utm_source=ig_embed&amp;utm_campaign=loading"
+            data-instgrm-version="14"
+            style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"
+          >
+            <div style="padding:16px;">
+              <a
+                href="https://www.instagram.com/p/DdnUjqoDXxs/?utm_source=ig_embed&amp;utm_campaign=loading"
+                style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                target="_blank"
+                >View this post on Instagram</a
+              >
+            </div>
+          </blockquote>
+        </div>
+
+        <div class="event-card event-card-embed">
+          <span class="event-badge type-campaign">Public Campaign</span>
+          <h3 class="event-title">Battling Barriers</h3>
+          <div class="event-meta">
+            <span><i class="fa-solid fa-calendar-days"></i> Ongoing</span>
+            <span><i class="fa-solid fa-location-dot"></i> Nationwide / Virtual</span>
+          </div>
+          <p class="event-desc">
+            Our campaign dedicated to bettering the lives of chronically-ill
+            youth. Get involved and help break down the barriers young patients
+            face in accessing healthcare.
+          </p>
+          <!-- Instagram embed -->
+          <blockquote
+            class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/p/DACXmC4vYEJ/?utm_source=ig_embed&amp;utm_campaign=loading"
+            data-instgrm-version="14"
+            style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"
+          >
+            <div style="padding:16px;">
+              <a
+                href="https://www.instagram.com/p/DACXmC4vYEJ/?utm_source=ig_embed&amp;utm_campaign=loading"
+                style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                target="_blank"
+                >View this post on Instagram</a
+              >
+            </div>
+          </blockquote>
+        </div>
+        </div>
+      </div>
+
+      <!-- ============================================================
+           PAST EVENTS
+           Archive of events that have already happened.
+           ============================================================ -->
+      <div class="events-panel" id="panel-past">
+        <div class="events-grid">
+        <div class="event-card past event-card-embed">
+          <span class="event-badge type-session">Announcement</span>
+          <h3 class="event-title">FY27 Executive Board Announced</h3>
+          <div class="event-meta">
+            <span><i class="fa-solid fa-calendar-days"></i> 2026</span>
+            <span><i class="fa-solid fa-location-dot"></i> Virtual</span>
+          </div>
+          <p class="event-desc">
+            After a selective process, we announced our FY27 executive board of
+            14 young leaders who drive our healthcare advocacy through blogs,
+            videos, and petitions.
+          </p>
+          <!-- Instagram embed -->
+          <blockquote
+            class="instagram-media"
+            data-instgrm-captioned
+            data-instgrm-permalink="https://www.instagram.com/p/DcU5HHxjKlK/?utm_source=ig_embed&amp;utm_campaign=loading"
+            data-instgrm-version="14"
+            style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"
+          >
+            <div style="padding:16px;">
+              <a
+                href="https://www.instagram.com/p/DcU5HHxjKlK/?utm_source=ig_embed&amp;utm_campaign=loading"
+                style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                target="_blank"
+                >View this post on Instagram</a
+              >
+            </div>
+          </blockquote>
+        </div>
+
+        <div class="event-card past event-card-embed">
+          <span class="event-badge type-partner">Partner Engagement</span>
+          <h3 class="event-title">Generation Patient Fundraiser</h3>
+          <div class="event-meta">
+            <span><i class="fa-solid fa-calendar-days"></i> 2024</span>
+            <span><i class="fa-solid fa-location-dot"></i> Virtual</span>
+          </div>
+          <p class="event-desc">
+            We raised $11,249 to support Generation Patient's work for their
+            community of young adults with chronic medical conditions — a
+            milestone partner engagement recognized with an enormous thank-you.
+          </p>
+          <!-- Instagram embed -->
+          <blockquote
+            class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/p/DB9foQdPJT0/?utm_source=ig_embed&amp;utm_campaign=loading"
+            data-instgrm-version="14"
+            style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"
+          >
+            <div style="padding:16px;">
+              <a
+                href="https://www.instagram.com/p/DB9foQdPJT0/?utm_source=ig_embed&amp;utm_campaign=loading"
+                style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                target="_blank"
+                >View this post on Instagram</a
+              >
+            </div>
+          </blockquote>
+        </div>
+
+        <div class="event-card past event-card-embed">
+          <span class="event-badge type-conference">Conference</span>
+          <h3 class="event-title">Online Health Policy Conference</h3>
+          <div class="event-meta">
+            <span><i class="fa-solid fa-calendar-days"></i> April 2024</span>
+            <span><i class="fa-solid fa-location-dot"></i> Virtual</span>
+          </div>
+          <p class="event-desc">
+            A two-hour online conference featuring distinguished alumni and
+            students from Yale, Columbia, and NYU, all passionate about health
+            policy and Nightingale's mission.
+          </p>
+          <!-- Instagram embed -->
+          <blockquote
+            class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/p/C5mDVZXvrEA/?utm_source=ig_embed&amp;utm_campaign=loading"
+            data-instgrm-version="14"
+            style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"
+          >
+            <div style="padding:16px;">
+              <a
+                href="https://www.instagram.com/p/C5mDVZXvrEA/?utm_source=ig_embed&amp;utm_campaign=loading"
+                style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                target="_blank"
+                >View this post on Instagram</a
+              >
+            </div>
+          </blockquote>
+        </div>
+
+        <div class="event-card past event-card-embed">
+          <span class="event-badge type-campaign">Public Campaign</span>
+          <h3 class="event-title">Political Email Campaign</h3>
+          <div class="event-meta">
+            <span><i class="fa-solid fa-calendar-days"></i> September 2024</span>
+            <span><i class="fa-solid fa-location-dot"></i> Nationwide</span>
+          </div>
+          <p class="event-desc">
+            A nationwide campaign that sent 23,000+ emails to legislators and
+            decision-makers, in collaboration with our chapters, fighting for
+            better healthcare legislation for all.
+          </p>
+          <!-- Instagram embed -->
+          <blockquote
+            class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/p/C_zZ9u1MC-x/?utm_source=ig_embed&amp;utm_campaign=loading"
+            data-instgrm-version="14"
+            style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"
+          >
+            <div style="padding:16px;">
+              <a
+                href="https://www.instagram.com/p/C_zZ9u1MC-x/?utm_source=ig_embed&amp;utm_campaign=loading"
+                style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                target="_blank"
+                >View this post on Instagram</a
+              >
+            </div>
+          </blockquote>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-list">
+        <ul class="list-left">
+          <li>Get in Touch</li>
+          <li>
+            <a href="https://www.instagram.com/nightingaleadvocacy/">Instagram</a>
+          </li>
+          <li>
+            <a href="mailto:nightingaleadvocacy@gmail.com"
+              >nightingaleadvocacy@gmail.com</a
+            >
+          </li>
+        </ul>
+        <ul class="list-middle">
+          <li>Join the Team</li>
+          <li>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdFobm2nfpG7rK_pFbH-y8R8_hBdhmfnZX2XJXu2eutAewQSA/viewform"
+              >Become a Member</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfok3dtQS7GCs1z74NC3AxltauRFqEHoY21ey6kxT9sKawJGw/viewform"
+              >Found a Chapter</a
+            >
+          </li>
+        </ul>
+        <ul class="list-right">
+          <li>Learn More</li>
+          <li>
+            <a
+              href="https://www.instagram.com/p/Chn1JGjLX8F/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
+              >Informational Post</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://docs.google.com/document/d/1rqICPjCdNFq_Cf3AzXCgLLwLSfuYH6fxSIajuKSmt6I/edit?tab=t.0"
+              >Official Bylaws and Guidelines</a
+            >
+          </li>
+        </ul>
+      </div>
+      <br />
+      <a href="https://nightingaleadvocacy.net/">Nightingale Advocacy Website</a>
+      © 2026 by
+      <a href="https://github.com/annabelslaugh">Annabel Slaughter</a> is
+      licensed under
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+        >CC BY-NC-SA 4.0</a
+      >
+      <br />
+      <br />
+    </footer>
+    <script async src="//www.instagram.com/embed.js"></script>
+    <script>
+      // Tab switching for the events sections. Shows one panel at a time and
+      // asks Instagram to (re)render embeds when a panel becomes visible.
+      (function () {
+        var tabs = document.querySelectorAll(".events-tab");
+        var panels = document.querySelectorAll(".events-panel");
+
+        function processEmbeds() {
+          if (window.instgrm && window.instgrm.Embeds) {
+            window.instgrm.Embeds.process();
+          }
+        }
+
+        tabs.forEach(function (tab) {
+          tab.addEventListener("click", function () {
+            var target = tab.getAttribute("data-tab");
+            tabs.forEach(function (t) {
+              t.classList.remove("active");
+            });
+            panels.forEach(function (p) {
+              p.classList.remove("active");
+            });
+            tab.classList.add("active");
+            document
+              .getElementById("panel-" + target)
+              .classList.add("active");
+            processEmbeds();
+          });
+        });
+
+        window.addEventListener("load", processEmbeds);
+      })();
+    </script>
+  </body>
+</html>
