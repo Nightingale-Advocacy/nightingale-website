@@ -23,24 +23,34 @@
         <a href="events.html" class="active">Events</a>
         <a href="mailto:nightingaleadvocacy@gmail.com">Contact</a>
       </nav>
+      <details class="mobile-menu">
+        <summary class="logo">Nightingale Advocacy</summary>
+        <nav aria-label="Mobile navigation">
+          <a href="index.html"> Home</a>
+          <a href="about.html">About</a>
+          <a href="team.html">Team</a>
+          <a href="blog.html">Blog</a>
+          <a href="chapters.html">Chapters</a>
+          <a href="events.html" class="active">Events</a>
+          <a href="mailto:nightingaleadvocacy@gmail.com">Contact</a>
+        </nav>
+      </details>
     </header>
 
     <section class="events">
       <h1 class="events">Our Events</h1>
-      <p class="events-intro">
-        Follow along with our partner engagements, fundraisers, public
-        campaigns, conferences, sessions, and meetups. Track what's coming up,
-        what's happening now, and where we've been.
-        <br />
+      <div class="events-intro">
         <a
           href="https://www.instagram.com/nightingaleadvocacy/"
           class="btn events-follow"
-          >Follow us on Instagram</a
         >
-      </p>
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          <span>Follow us on Instagram</span>
+        </a>
+      </div>
 
       <!-- ============================================================
-           TABS: switch between Upcoming / Ongoing / Past.
+           TABS: switch between Ongoing / Past.
            Only the .events-panel with class "active" is shown.
            When adding an event, update the count in its tab button.
            Event types (set the badge class + label):
@@ -48,10 +58,7 @@
              type-campaign   | type-partner    | type-session
            ============================================================ -->
       <div class="events-tabs" role="tablist">
-        <button class="events-tab active" data-tab="upcoming">
-          Upcoming <span class="count">(1)</span>
-        </button>
-        <button class="events-tab" data-tab="ongoing">
+        <button class="events-tab active" data-tab="ongoing">
           Ongoing <span class="count">(3)</span>
         </button>
         <button class="events-tab" data-tab="past">
@@ -60,32 +67,9 @@
       </div>
 
       <!-- ============================================================
-           UPCOMING EVENTS
-           Add future events here. Duplicate an .event-card block below.
-           ============================================================ -->
-      <div class="events-panel active" id="panel-upcoming">
-        <div class="events-grid">
-        <div class="event-card">
-          <span class="event-badge type-session">Coming Soon</span>
-          <h3 class="event-title">More events on the way</h3>
-          <div class="event-meta">
-            <span><i class="fa-solid fa-calendar-days"></i> Stay tuned</span>
-            <span><i class="fa-solid fa-location-dot"></i> Nationwide / Virtual</span>
-          </div>
-          <p class="event-desc">
-            We're always planning what's next. Follow us on Instagram for
-            announcements about upcoming fundraisers, conferences, sessions, and
-            meetups.
-          </p>
-        </div>
-        </div>
-      </div>
-
-      <!-- ============================================================
            ONGOING / CURRENT
-           Active campaigns or events happening right now.
            ============================================================ -->
-      <div class="events-panel" id="panel-ongoing">
+      <div class="events-panel active" id="panel-ongoing">
         <div class="events-grid">
         <div class="event-card event-card-embed">
           <span class="event-badge type-campaign">Public Campaign</span>
@@ -198,7 +182,6 @@
 
       <!-- ============================================================
            PAST EVENTS
-           Archive of events that have already happened.
            ============================================================ -->
       <div class="events-panel" id="panel-past">
         <div class="events-grid">

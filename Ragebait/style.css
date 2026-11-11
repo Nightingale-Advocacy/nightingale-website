@@ -18,11 +18,11 @@
         width: 100%;
         height: 100vh;
         overflow-x: hidden;
-        background-color: #35074f; /* change this later */
+        background-color: #35074f;
         color: white;
     }
 
-    header{ /* change all these image details as you see fit later..maybe make it cuter? */
+    header{
         margin-top: 0;
         position: fixed;
         top: 0;
@@ -41,7 +41,7 @@
 
         .logo{
             font-size: 3rem;
-            color: #bd7df8; /* change later to match color scheme */
+            color: #bd7df8;
             font-weight: 800;
             cursor: pointer;
             transition: 0.5s ease;
@@ -54,7 +54,7 @@
 
         nav a{
             font-size: 1.8rem;
-            color: white; /* change later to match color scheme */
+            color: white;
             margin-left: 6.36rem;
             font-weight: 500;
             transition: 0.3s ease;
@@ -63,13 +63,13 @@
 
         nav a:hover,
         nav a:active{
-            color: #bd7df8; /* change later to match color scheme */
-            border-bottom: 3px solid #bd7df8; 
+            color: #bd7df8;
+            border-bottom: 3px solid #bd7df8;
         }
 
         @media(max-width:995px){
             nav{
-                position: absolute; /* modify all da color stuff here */
+                position: absolute;
                 display: none;
                 top: 0;
                 right: 0;
@@ -82,12 +82,12 @@
                 border-top: 0.1rem solid#bd7df8;
 
             }
-        
-        
+
+
         nav.active{
             display: block;
         }
-        
+
         nav a{
             display: block;
             font-size: 2rem;
@@ -141,7 +141,7 @@ span{
 }
 
 .home-img{
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
 .home-img img{
@@ -170,7 +170,7 @@ span{
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
-    color: white; /* change later to match color scheme */
+    color: white;
 }
 
 .social-icons a:hover{
@@ -202,7 +202,7 @@ box-shadow: 0 0 25px #bd7df8;
 }
 
 .typing-text{
-    font-size: 34px; /*og 34px*/
+    font-size: 34px;
     font-weight: 600;
     min-width: 280px;
 }
@@ -295,7 +295,7 @@ box-shadow: 0 0 25px #bd7df8;
         margin-right: 5rem;
         margin-left: 5rem;
         color: black;
-        
+
     }
 
     .about .white-box{
@@ -340,7 +340,7 @@ box-shadow: 0 0 25px #bd7df8;
         height: 58rem;
     }
 
-    
+
 
     .about .origins-img{
         float: right;
@@ -358,6 +358,7 @@ box-shadow: 0 0 25px #bd7df8;
     }
 
     .team .container{
+        display: flow-root;
         width: 100%;
     }
 
@@ -365,14 +366,14 @@ box-shadow: 0 0 25px #bd7df8;
         width: 47%;
         float: left;
         margin: 2.5% 0 1.5% -8.3%;
-        
+
     }
 
     .team .exec-cards-b{
         width: 47%;
         float: right;
         margin: 2.5% 1.7% 1.5% 0;
-        
+
     }
 
     .team .exec-cards-a img{
@@ -416,7 +417,7 @@ box-shadow: 0 0 25px #bd7df8;
 
 .chapters .chapter-imgs{
     position: relative;
-    
+
 }
 
 .chapters .chapter-imgs img{
@@ -435,7 +436,7 @@ box-shadow: 0 0 25px #bd7df8;
     z-index: 1000;
     background-color: transparent;
 }
- 
+
 .chapters .chapter-imgs .btn:hover{
     background-color: #bd7df8;
     box-shadow: 0 0 25px #bd7df8;
@@ -505,31 +506,31 @@ blog-img img{
     }
 
     footer {
-    background-color: #484848; 
-    padding: 20px;               
-    border: 1px solid #484848;     
-    margin: 20px;   
-    margin-left: -20px;     
-    margin-right: -20px;    
-    border-radius: 8px;         
-    text-align: center;         
+    background-color: #484848;
+    padding: 20px;
+    border: 1px solid #484848;
+    margin: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius: 8px;
+    text-align: center;
     color: white;
-    font-size: 1.4rem;      
+    font-size: 1.4rem;
 }
 
 
 
 footer a {
-    color: #bd7df8;            
-    text-decoration: none;     
+    color: #bd7df8;
+    text-decoration: none;
 }
 
-footer a:hover {    
-    text-decoration: underline; 
+footer a:hover {
+    text-decoration: underline;
 }
 
 .footer-list {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 0;
@@ -540,8 +541,8 @@ footer a:hover {
 }
 
 .footer-list ul {
-  list-style-type: none; 
-  flex: 1; 
+  list-style-type: none;
+  flex: 1;
   margin: 1rem;
 }
 
@@ -549,11 +550,12 @@ footer a:hover {
         font-size: 3.5rem;
         color: #bd7df8;
         text-align: center;
-        margin-top: 150rem;
+        margin-top: 0;
         margin-right: 1.3rem;
     }
 
     .advisory .container-2{
+        display: flow-root;
         width: 100%;
     }
 
@@ -561,14 +563,14 @@ footer a:hover {
         width: 47%;
         float: left;
         margin: 2.5% 0 1.5% -8.3%;
-        
+
     }
 
     .advisory .exec-cards-d{
         width: 47%;
         float: right;
         margin: 2.5% 1.7% 1.5% 0;
-        
+
     }
 
     .advisory .exec-cards-c img{
@@ -602,18 +604,32 @@ footer a:hover {
     box-shadow: 0 0 20px #bd7df8;
 }
 
-.blog .main .column{
-    width: 48%;
+.blog .main{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4.5rem 4%;
+    margin: 5rem 0 4.5rem;
+}
 
+.blog .main .post{
+    min-width: 0;
+    margin: 0;
+}
+
+@media(max-width:640px){
+    .blog .main{
+        grid-template-columns: minmax(0, 1fr);
+    }
 }
 
 .post .post-img{
+    display: block;
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 2.5%
 }
-    
+
 .user-info img{
     width: 2.5rem;
 }
@@ -646,7 +662,7 @@ footer a:hover {
     color: #35074f;
     font-size: 1.71rem;
     font-weight: 1000;
-    
+
 }
 
 .post {
@@ -668,6 +684,10 @@ footer a:hover {
     justify-content: space-between;
     padding: 0 0.875rem;
     margin-top: 3rem;
+}
+
+.post-info h2 a{
+    color: #35074f;
 }
 
 .post-info h2:hover {
@@ -699,9 +719,6 @@ a:active {
   color: #35074f;
 }
 
-/* ============================================================
-   EVENTS PAGE
-   ============================================================ */
 
 .events h1 {
     color: #bd7df8;
@@ -711,16 +728,42 @@ a:active {
 }
 
 .events .events-intro {
-    font-size: 1.5rem;
     text-align: center;
-    max-width: 800px;
-    margin: 2rem auto 1rem auto;
-    line-height: 1.6;
-    opacity: 0.9;
+    margin: 3rem auto;
 }
 
 .events .events-follow {
-    margin-top: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    max-width: 100%;
+    padding: 1.6rem clamp(1.6rem, 4vw, 3.2rem);
+    border-radius: 1.6rem;
+    background-color: #ffffff;
+    color: #35074f;
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.events .events-follow i {
+    flex-shrink: 0;
+    font-size: 2.8rem;
+}
+
+.events .events-follow:hover,
+.events .events-follow:focus-visible {
+    background-color: #bd7df8;
+    color: #35074f;
+    box-shadow: 0 0 25px rgba(189, 125, 248, 0.4);
+}
+
+.events .events-follow:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
 }
 
 .events .events-status {
@@ -761,7 +804,6 @@ a:active {
     opacity: 0.85;
 }
 
-/* Cards containing an Instagram embed get more width */
 .event-card-embed {
     width: calc(50% - 1.25rem);
 }
@@ -788,7 +830,6 @@ a:active {
     margin-bottom: 1.2rem;
 }
 
-/* Event type badge colors */
 .type-fundraiser { background-color: #35074f; }
 .type-conference { background-color: #7b2fb5; }
 .type-meetup { background-color: #bd7df8; color: #35074f; }
@@ -836,7 +877,6 @@ a:active {
     }
 }
 
-/* ---- Events: tabs + capped embeds ---- */
 
 .events-tabs {
     display: flex;
@@ -874,7 +914,6 @@ a:active {
     margin-left: 0.4rem;
 }
 
-/* Only the active panel is shown */
 .events-panel {
     display: none;
 }
@@ -883,7 +922,6 @@ a:active {
     display: block;
 }
 
-/* Capped-embed grid: cards sit in a neat centered grid */
 .events-panel .events-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 360px));
@@ -899,10 +937,277 @@ a:active {
     align-items: stretch;
 }
 
-/* Cap the Instagram embed to the card column, centered, no sprawl */
 .event-card .instagram-media {
     margin: 1.4rem auto 0 auto !important;
     max-width: 328px !important;
     min-width: 0 !important;
     width: 100% !important;
+}
+
+.mobile-menu, .mobile-article{
+    display: none;
+}
+
+@media(min-width:996px) and (max-width:1399px){
+    header{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    header > nav{
+        display: flex;
+        gap: clamp(1rem, 2vw, 2.8rem);
+    }
+    nav a{
+        margin-left: 0;
+        font-size: 1.6rem;
+        white-space: nowrap;
+    }
+    .home{
+        gap: 4rem;
+    }
+    .home-img img{
+        width: min(40vw, 70vh);
+    }
+}
+
+@media(max-width:1399px){
+    .about .poople-box{
+        display: flow-root;
+        height: auto;
+        margin: 5rem 0 0;
+        padding: 3rem;
+    }
+    .about .about-origins p{
+        margin: 3rem 0 0;
+    }
+    .about .origins-img{
+        height: auto;
+        margin: 3rem 0 0;
+    }
+    .about .origins-img img{
+        width: 100%;
+        height: auto;
+    }
+    .team .container, .advisory .container-2{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .team .container > div, .advisory .container-2 > div{
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    .team .container img, .advisory .container-2 img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .chapters .chapter-imgs{
+        text-align: center;
+        margin-top: 3rem;
+    }
+    .chapters .chapter-imgs img{
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .chapters .chapter-imgs .btn{
+        position: static;
+        margin-top: 1.5rem;
+    }
+    .chapters .chapter-imgs .btn:hover{
+        color: #35074f;
+    }
+    footer{
+        margin-left: 0;
+        margin-right: 0;
+        overflow-wrap: anywhere;
+    }
+    .footer-list{
+        max-width: 110rem;
+        margin: 1rem auto;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+    .footer-list ul{
+        min-width: 0;
+    }
+    .events-panel .events-grid{
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 360px));
+    }
+    .events-panel .event-card{
+        min-width: 0;
+    }
+}
+
+@media(max-width:995px){
+    header{
+        padding: 1.8rem 5%;
+    }
+    header > .logo, header > nav{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+        width: 100%;
+    }
+    .mobile-menu summary{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        font-size: clamp(2rem, 5vw, 3rem);
+        list-style: none;
+        cursor: pointer;
+    }
+    .mobile-menu summary::-webkit-details-marker{
+        display: none;
+    }
+    .mobile-menu summary::after{
+        content: '+';
+    }
+    .mobile-menu[open] summary::after{
+        content: '\2212';
+    }
+    .mobile-menu .logo:hover{
+        transform: none;
+    }
+    .mobile-menu summary:focus-visible, .mobile-menu a:focus-visible{
+        outline: 2px solid #bd7df8;
+        outline-offset: 4px;
+    }
+    .mobile-menu nav{
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        max-height: 75vh;
+        max-height: 75svh;
+        overflow-y: auto;
+        padding: 1rem 5%;
+        border: 0;
+        border-bottom: 2px solid #bd7df8;
+        border-radius: 0 0 1.5rem 1.5rem;
+        background-color: #35074f;
+        box-shadow: 0 1rem 2rem #0004;
+    }
+    .mobile-menu nav a{
+        display: block;
+        margin: 0;
+        padding: 1.2rem 0;
+        font-size: 1.8rem;
+        border: 0;
+    }
+    .mobile-menu nav a:hover, .mobile-menu nav a:active{
+        padding: 1.2rem 0;
+        border: 0;
+        color: #bd7df8;
+    }
+    section{
+        min-height: 0;
+        padding: 9rem 5% 4rem;
+    }
+    section + section{
+        padding-top: 2rem;
+    }
+    .home{
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0;
+    }
+    .home-img img{
+        width: min(65vw, 36rem);
+        height: auto;
+        margin-top: 0;
+    }
+    .home .home-content{
+        min-width: 0;
+        width: 100%;
+    }
+    .home .home-content h1{
+        font-size: clamp(3.4rem, 6vw, 5rem);
+        margin-top: 0;
+    }
+    .home .home-content h3{
+        font-size: clamp(1.8rem, 3.8vw, 2.8rem);
+        min-width: 0;
+    }
+    .typing-text span::after{
+        display: none;
+    }
+    .home-content p, .post p, .event-desc{
+        font-size: 1.5rem;
+        line-height: 1.6;
+        text-align: left;
+    }
+    .about .white-box{
+        margin-top: 0;
+    }
+    .about .about-mission p{
+        margin: 2rem;
+        overflow-wrap: anywhere;
+    }
+    .about .about-origins p, .about .origins-img{
+        float: none;
+        width: 100%;
+    }
+    .about .origins-img{
+        max-width: 36rem;
+        margin: 2rem auto 0;
+    }
+    .team h1, .advisory h1, .blog h1, .events h1, .chapters h1,
+    .about .about-mission h1, .about .about-origins h1{
+        font-size: clamp(2.8rem, 5vw, 3.5rem);
+        margin: 1rem 0 2rem;
+    }
+    .blog .main{
+        padding: 0;
+        margin-top: 3rem;
+        gap: 3rem;
+    }
+    .post-info h2{
+        font-size: 1.9rem;
+    }
+    .user-info{
+        flex-wrap: wrap;
+    }
+    .meetdablog h1{
+        font-size: 2.8rem;
+        margin: 2rem 5%;
+    }
+    .footer-list{
+        flex-wrap: wrap;
+    }
+    .mobile-article{
+        display: block;
+        margin: 9rem 5% 2rem;
+        color: #bd7df8;
+        font-size: 1.8rem;
+        text-decoration: underline;
+    }
+    body > embed.blog{
+        display: block;
+        width: 100%;
+        height: 80vh;
+    }
+}
+
+@media(max-width:640px){
+    .team .container, .advisory .container-2{
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .about .poople-box{
+        padding: 2rem;
+    }
+    .post .post-img{
+        height: 220px;
+    }
+    .footer-list{
+        flex-direction: column;
+        align-items: center;
+    }
 }
